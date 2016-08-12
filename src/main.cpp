@@ -5,6 +5,7 @@
 #include <keypad.h>
 #include <mic.h>
 #include <pattern.h>
+#include <gyro.h>
 
 int pinLed = 13;
 
@@ -28,4 +29,7 @@ void loop () {
 //  Enter the correct pattern (a strait line down the left of the screen) to turn on the led, all other patterns
 //  turning it off
 //    pattern();
+
+//  Use the Gyroscope on your phone to turn on and off an led
+//    gyro();
 }

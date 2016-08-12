@@ -13,10 +13,13 @@ int counter = 0;
 
 int length = 0;
 
+int button = 10;
+
 
 void setup () {
     OneSheeld.begin();
     pinMode(pinLed, OUTPUT);
+    pinMode(button, INPUT);
 }
 
 void loop () {
@@ -32,4 +35,22 @@ void loop () {
 
 //  Use the Gyroscope on your phone to turn on and off an led
 //    gyro();
+
+//    if (AccelerometerSensor.getX() > 8) {
+//        digitalWrite(pinLed, 1);
+//    } else {
+//        digitalWrite(pinLed, 0);
+//    }
+//
+//    if (AccelerometerSensor.getY() > 8) {
+//        digitalWrite(pinLed, 1);
+//    } else {
+//        digitalWrite(pinLed, 0);
+//    }
+//
+//    if (AccelerometerSensor.getZ() > 8) {
+//        digitalWrite(pinLed, 1);
+//    } else {
+//        digitalWrite(pinLed, 0);
+//    }
 }

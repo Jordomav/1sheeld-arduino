@@ -6,6 +6,9 @@
 #include <mic.h>
 #include <pattern.h>
 #include <gyro.h>
+#include <accel.h>
+#include <sms.h>
+#include <notification.h>
 
 int pinLed = 13;
 
@@ -36,21 +39,14 @@ void loop () {
 //  Use the Gyroscope on your phone to turn on and off an led
 //    gyro();
 
-//    if (AccelerometerSensor.getX() > 8) {
-//        digitalWrite(pinLed, 1);
-//    } else {
-//        digitalWrite(pinLed, 0);
-//    }
-//
-//    if (AccelerometerSensor.getY() > 8) {
-//        digitalWrite(pinLed, 1);
-//    } else {
-//        digitalWrite(pinLed, 0);
-//    }
-//
-//    if (AccelerometerSensor.getZ() > 8) {
-//        digitalWrite(pinLed, 1);
-//    } else {
-//        digitalWrite(pinLed, 0);
-//    }
+
+//  Turn on the led using the phones accelerometer
+//    accel();
+
+//  Click on a button in pin 10 to send a text message to the user
+//    sms();
+
+//  Send the user a notification if the button in pin 10 is clicked
+//   notify();
+
 }
